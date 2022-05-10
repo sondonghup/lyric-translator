@@ -11,13 +11,15 @@ korean to english 는 kobert, distilgpt2 사용
 english to korean 은 distilbert, kogpt2 사용
 m2m100 모델도 사용
 
+기존 데이터양이 부족하여 학습이 잘된 모델을 가지고 backtranslation으로 데이터 증강
+
 기존에 있던 크롤링된 가사데이터중 2000개를 가져와 test
 
 google translate와 bleu스코어 비교
 
                     영한      한영
-google translation 0.1681   0.2459 
-bert-kogpt2        0.0904
-kobert-gpt2                 0.2767
-m2m100             0.3383   0.2772
+google translation (0.1681   0.2459) 
+bert-kogpt2        (0.0904         )
+kobert-gpt2        (         0.2767)
+m2m100             (0.3383   0.2772)
 
